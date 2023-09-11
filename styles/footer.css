@@ -1,0 +1,10 @@
+footer {
+  margin-top: auto;
+  background: var(--bg-color) var(--bg-image);
+  border: 2px solid #211b01;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}

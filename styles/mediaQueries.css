@@ -1,0 +1,33 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 414px) {
+  nav {
+    border: 2px red solid;
+  }
+
+  img {
+    max-width: fit-content;
+  }
+
+  .d-grid {
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mc_embed_shell,
+  #mc_embed_shell > * {
+    width: 414px !important;
+  }
+}
+
+@media screen and (max-width: 820) {
+}

@@ -1,0 +1,26 @@
+nav {
+  position: fixed;
+  top: 10px;
+  left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background: var(--bg-color) var(--bg-image);
+  border: 2px solid #211b01;
+  padding: 1em;
+  border-radius: 1rem;
+  z-index: 99;
+}
+
+nav > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav > img {
+  width: 100px;
+  /* height: 100px; */
+  transition: 0.3s;
+}
