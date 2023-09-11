@@ -3,8 +3,8 @@
   animation: flip-scale-up-ver 0.5s linear both;
 }
 
-img:hover:not(.flip-scale-up-ver) {
-  transform: scale(1.1);
+img:hover {
+  animation: img-animation 1s linear both;
   transition: 0.3s;
 }
 
@@ -47,5 +47,32 @@ img:hover:not(.flip-scale-up-ver) {
   100% {
     -webkit-transform: scale(1) rotateY(180deg);
     transform: scale(1) rotateY(180deg);
+  }
+}
+
+@keyframes img-animation {
+  0% {
+    -webkit-transform: scale(1) rotate(0);
+    transform: scale(1) rotate(0);
+    filter: hue-rotate(0deg);
+
+    -webkit-filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotate(180deg);
+    transform: scale(2.5) rotate(180deg);
+
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(360deg);
+
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
   }
 }

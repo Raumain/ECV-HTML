@@ -8,3 +8,7 @@ footer {
   align-items: center;
   border-radius: 1rem;
 }
+
+footer > p {
+  margin: 0;
+}
